@@ -1,0 +1,38 @@
+﻿@model Pharmacy_v2.DTOs.AccountLoginDTO
+@{
+    ViewData["Title"] = "Login";
+
+    Layout = "_Layout_1";
+}
+<div class="container">
+    <div class="left-side">
+        <h1 >Welcome</h1>
+    </div>
+    <div class="right-side">
+
+        <form class="login-form" asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger" >
+            </div>
+            <input asp-for="UserName" placeholder="Username" />
+            <span asp-validation-for="UserName" class="text-danger small"></span>
+
+
+            <input asp-for="Password" placeholder="Password" />
+            <span asp-validation-for="Password" class="text-danger small"></span>
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input  asp-for="Remember_me" /> @Html.DisplayNameFor(model => model.Remember_me)
+                </label>
+            </div>
+            <button type="submit">Sign in</button>
+            <p>Don't have an account? <a href="/Account/Register" class="signup-link">Sign up here</a></p>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

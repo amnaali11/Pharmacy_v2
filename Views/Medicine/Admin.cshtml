@@ -1,0 +1,96 @@
+﻿@using Pharmacy_v2.Models
+@model List<Medicine>
+@{
+    Layout = "_Layout_admin";
+}
+
+@* <partial name="_Toaster" /> *@
+<!-- Main Heading -->
+<h1 class="alert btn-primary text-center">List of Medicines </h1>
+<hr />
+<div class="container mt-5">
+  
+    <div class="row mb-3">
+        <div class="col-md-8">
+            <form class="d-flex" method="get" asp-controller="Medicine" asp-action="Search">
+
+                <input class="form-control me-2 border-primary" type="search" name="search" placeholder="Search" value="@ViewBag.Search" style="width: 50%;">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="col-md-4 d-flex justify-content-end">
+            <a asp-controller="Medicine" asp-action="Add" class="btn btn-outline-primary" style="padding: 10px 20px;">
+                New Medicine
+            </a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+           @*  <div class="d-flex justify-content-between mb-3">
+                <div class="form-group">
+                    <select class="form-select w-auto">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+               
+            </div>
+ *@
+            <!-- Table -->
+            <table class="table table-bordered table-hover">
+                @if(@Model.Any()){
+
+                <thead class="table-warning">
+                    <tr>
+                        <th style="text-align:center">Image</th>
+                        <th style="text-align:center">Name</th>
+                        <th style="text-align:center">Cost</th>
+                        <th style="text-align:center">Created Date</th>
+                        <th style="text-align:center"> Expiry Date</th>
+                        <th style="text-align:center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td style="text-align:center;align-content:center"><img class="rounded" src="@item.Picture" alt="@item.Name" style="max-width: 100px;" /></td>
+                            <td style="text-align:center;align-content:center">@item.Name</td>
+                            <td style="text-align:center;align-content:center">@item.Price</td>
+                            <td style="text-align:center;align-content:center">@item.ProductionDate</td>
+                            <td style="text-align:center;align-content:center">@item.ExpiryDate</td>
+                            <td style="text-align:center;align-content:center">
+                                <a href="/Medicine/Edit/@item.Id" class="btn btn-sm btn-outline-secondary me-2">Edit</a>
+                                <a href="/Medicine/Delete/@item.Id" class="btn btn-sm btn-outline-danger me-2">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                }
+                    else{
+                    <div class="alert alert-warning text-center">
+                        No Medicines available at the moment.
+                    </div>
+                    }
+
+
+            </table>
+
+            <!-- Pagination or Showing Entries Information -->
+            <div class="d-flex justify-content-between">
+                <div>Showing 1 to 5 of 5 entries</div>
+                <nav>
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+

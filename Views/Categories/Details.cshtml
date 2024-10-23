@@ -1,0 +1,11 @@
+﻿@using Pharmacy_v2.Models
+@model Category
+@{
+    Layout = "_Layout_admin";
+}
+
+<h1 class="alert alert-warning text-center">@Model.CategoryName Details</h1>
+
+<partial name="_CategorData" />
+<br />
+<a class="btn btn-outline-secondary" asp-controller="Categories" asp-action="GetIndexView">Back to List</a>

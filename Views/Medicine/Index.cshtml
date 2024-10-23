@@ -1,0 +1,113 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Pharmacy_v2.Data
+@using Pharmacy_v2.Models
+@using System.Security.Claims
+
+@model List<Medicine>
+
+@inject UserManager<ApplicationUser> _userManager;
+@inject AppDbContext _context;
+
+@{
+    Layout = "_UserLayout";
+}
+
+<div class="bg-light py-3"></div>
+<section class="py-5">
+    <div class="container px-4 mt-5">
+        <div class="col-md-8">
+            <form class="d-flex" method="get" asp-controller="Medicine" asp-action="Search2">
+
+                <!-- Search Input -->
+                <input class="form-control me-2 border-primary" type="search" name="search" placeholder="Search" value="@ViewBag.Search" style="width: 50%;">
+
+                <!-- Category Dropdown -->
+                <select class="form-control me-2 border-primary" name="categoryId">
+                    <option value="">All Categories</option>
+                    @foreach (var category in _context.Categories.ToList())
+                    {
+                        <option value="@category.Id">@category.CategoryName</option>
+                    }
+                </select>
+
+                <!-- Search Button -->
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Medicines List -->
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4">
+            @foreach (var item in Model)
+            {
+                <div class="col mb-2">
+                    <div class="card p-2" style="width: 15rem; height: 16rem;">
+                        <!-- Product image -->
+                        <img class="card-img-top" src="@item.Picture" alt="..." style="height:120px" />
+
+                        <!-- Product details -->
+                        <div class="card-body p-2">
+                            <div class="text-center">
+                                <!-- Product name -->
+                                <h5 class="fw-bolder">@item.Name</h5>
+                                <!-- Product price -->
+                                $@item.Price
+                            </div>
+                        </div>
+
+                        <!-- Product actions -->
+                        <div class="card-footer p-2 pt-0 border-top-0 bg-transparent">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                @* Fetch the current user *@
+                                var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+                                <div class="text-center">
+                                    <a id="addToCartButton" class="btn btn-outline-dark mt-auto"
+                                       onclick="Add({ Name: '@item.Name', Cost: @item.Price, Quantity: 1, Image: '@Url.Content("~/Images/" + @item.Picture.Replace("Images", ""))', User_Id: '@user.Id' })">
+                                        Add to cart
+                                    </a>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" href="/Account/Login">Add to cart</a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script>
+    function Add(order) {
+        console.log(order);
+
+        $.ajax({
+            url: '@Url.Action("AddOrder", "Bag")',
+            type: 'POST',
+            data: { order: order, User_Id: order.User_Id },
+            success: function (response) {
+                if (response.success) {
+                    toastr.success(response.message);
+
+                    // Add a delay to let the user see the success message before reloading
+                    setTimeout(function () {
+                        window.location.reload(); // Reload the page after the message
+                    }, 2000);
+                } else {
+                    toastr.error('Failed to add item to cart.');
+                }
+            }
+        });
+    }
+</script>

@@ -1,0 +1,45 @@
+﻿@model Pharmacy_v2.DTOs.Data
+@{
+    Layout = "_Layout_1";
+}
+
+        <!-- Card Frame -->
+    <div class="container">
+    <div class="left-side">
+        <h1>Checkout Form</h1>
+    </div>
+    <div class="right-side">
+
+        <form class="login-form" method="get" action="/Bag/Confirmation">
+                        <!-- Personal Information -->
+                        <div >
+                            <label for="firstName" class="form-label">First Name</label>
+                        <input asp-for="FirstName" class="form-control" id="firstName" required>
+                        </div>
+                        <div >
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input asp-for="LastName" class="form-control" id="lastName"  required>
+                        </div>
+                        <div >
+                            <label for="email" class="form-label">Email</label>
+                            <input asp-for="Email" class="form-control" id="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <!-- Phone -->
+                       
+                        <div >
+                            <label for="city" class="form-label">Phone</label>
+                            <input asp-for="Phone" class="form-control" id="city" placeholder="Phone" required>
+                        </div>
+
+
+                    <input hidden asp-for="Cost" value="@ViewData["Total_cost"]">
+
+
+                    <!-- Submit Button -->
+                    <hr class="my-4">
+                    <button class="w-100 btn btn-warning btn-lg" type="submit">Place Order</button>
+                </form>
+                </div>
+        </div>
+

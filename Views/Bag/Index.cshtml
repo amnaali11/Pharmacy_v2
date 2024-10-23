@@ -1,0 +1,161 @@
+﻿@using Pharmacy_v2.Models
+@model Bag?
+
+@{
+    Layout ="_UserLayout";
+}
+
+@{
+    var total=0;
+}
+<section class="h-100">
+    <div class="container h-100 py-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-10">         
+                <div class="col-md-14">
+                    <div class="card mb-4">
+                        <div class="card-header py-3">
+                            <h5 class="mb-0">Shopping Cart</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="data">
+                    @{
+                        if(Model?.Orders != null)
+                        {
+                            @foreach (var item in Model.Orders)
+                            {
+                                <div class="card rounded-12 mb-4 px-12" style="padding:12px">
+                                    <div class="row d-flex justify-content-between align-items-center">
+                                        <div class="col-md-2 col-lg-2 col-xl-2">
+                                            <img src="@item.Image" class="img-fluid rounded-3" alt="">
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-xl-3">
+                                            <p class="lead fw-normal mb-2">@item.Name</p>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                            <span class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown();
+                                            UpdateQuantity(@item.Id,this.parentNode.querySelector('input[type=number]').value);">
+                                                <i class="fas fa-minus" style="color:#ffc107"></i>
+                                            </span>
+
+                                            <input min="1" name="Quantity" value="@item.Quantity" type="number"
+                                                   class="form-control form-control-sm form-input"
+                                                   style="text-align:center;" onchange="UpdateQuantity(@item.Id,this.value)" />
+
+
+
+
+                                            <span class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp();
+                                            UpdateQuantity(@item.Id,this.parentNode.querySelector('input[type=number]').value);">
+                                                <i class="fas fa-plus" style="color:#ffc107"></i>
+                                            </span>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <span class="lead fw-normal">Price OF Item : </span>
+                                            <span class="lead fw-normal item-price">@item.Cost</span>
+                                        </div>
+                                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                            <a href="/Bag/DeleteOrder/@item.Id" class="text-danger" style=" padding:12px">
+                                                <i class="fas fa-trash fa-lg"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    }
+               
+                </div>
+                @if(Model?.Orders != null)
+                {
+                    <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header py-3">
+                            <h5 class="mb-0">Summary</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                    Products
+                                    <span class="totalPrice">0</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    Shipping
+                                    <span>Gratis</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                    <div>
+                                        <strong>Total amount</strong>
+                                      
+                                    </div>
+                                    <span><strong class="totalPrice">0</strong></span>
+                                </li>
+                            </ul>
+                                <div>
+                                    <a href="/Bag/Checkout/@Model.UserId" class="btn btn-primary">continue shopping</a>
+                                </div>
+
+                            
+                        </div>
+                        </div>
+                        </div>
+                }
+                        </div>
+                        </div>
+                        </div>
+              
+  </section>
+
+<script>
+    // Function to calculate and update the total price
+    function updateTotalPrice() {
+        // Get all the input fields for quantities
+        var inputs = document.querySelectorAll(".form-input");
+        
+        // Initialize total price to 0
+        var totalPrice = 0;
+
+        // Loop through each input field and calculate the total price
+        inputs.forEach(function (input) {
+            var quantity = parseInt(input.value); // Get the quantity of the item
+            var price = parseFloat(input.closest(".row").querySelector(".item-price").innerText); // Get the price of the item
+           
+
+            // Add the price for this item to the total price
+            totalPrice += quantity * price;
+        });
+
+        // Update the total price in the summary section
+        document.querySelectorAll(".totalPrice")[0].innerText = totalPrice.toFixed(2) + " $";
+        document.querySelectorAll(".totalPrice")[1].innerText = totalPrice.toFixed(2) + " $";
+       
+    }
+    function UpdateQuantity(itemId, quantity) {
+   
+             $.ajax({
+            type: "POST",
+            url: '/Bag/UpdateQuantity',
+            data: {
+                Id: itemId,
+                Quantity: quantity    
+                      
+            },
+            success: function (response) {
+                if (response.success) {
+                    console.log("Update");
+                } else {
+                    alert("Update failed");
+                }
+            },
+            error: function (error) {
+                console.log("Error:", error);
+            }
+        });
+        updateTotalPrice();
+    }
+    
+
+    // Call the function once when the page loads to initialize the total price
+    window.onload = updateTotalPrice;
+</script>

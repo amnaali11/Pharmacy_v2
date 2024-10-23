@@ -1,0 +1,183 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Pharmacy_v2
+build_property.RootNamespace = Pharmacy_v2
+build_property.ProjectDir = C:\Users\bedo\Downloads\Pharmacy_v2(2)\Pharmacy_v2\Pharmacy_v2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\bedo\Downloads\Pharmacy_v2(2)\Pharmacy_v2\Pharmacy_v2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Bag/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFnXEFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Bag/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFnXENoZWNrT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Bag/Confirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFnXENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Bag/EmptyCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFnXEVtcHR5Q2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Bag/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFnXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Categories/GetAllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xHZXRBbGxVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Categories/_CategorData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xfQ2F0ZWdvckRhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Medicine/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Medicine/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVcQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Medicine/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Medicine/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Medicine/Locked.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVcTG9ja2VkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Shared/Locked.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvY2tlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Shared/_Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Shared/_Layout_1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Shared/_Layout_2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Shared/_Layout_admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfYWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Shared/_Toaster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub2FzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bedo/Downloads/Pharmacy_v2(2)/Pharmacy_v2/Pharmacy_v2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5rpxp6tex6

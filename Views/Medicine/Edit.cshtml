@@ -1,0 +1,89 @@
+﻿@using Pharmacy_v2.Data
+@using Pharmacy_v2.Models
+@model Medicine
+@inject AppDbContext DbContext
+@{
+   
+    Layout = "_Layout_admin";
+}
+
+<div class="bg-light py-3"></div>
+
+<div class="container mt-5">
+    <form method="post" action="/Medicine/SaveEdit/@Model.Id" enctype="multipart/form-data"> 
+        <!-- تأكد من إضافة enctype="multipart/form-data" لتحميل الصور -->
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <!-- عرض الصورة الحالية -->
+                        <img src="@Model.Picture" id="medicineImage" class="img-fluid" style="max-width: 150px; border: 2px solid #ffc107;" alt="@Model.Name">
+
+                        <div class="mb-3">
+                            <!-- Label للصورة باستخدام Tag Helper -->
+                            <label class="control-label" asp-for="Picture"></label>
+
+                            <!-- حقل رفع الصورة باستخدام Tag Helper -->
+                            <input type="file" name="imageFormFile" id="imageFormFile" class="form-control-file" accept="image/*" onchange="SetImgSrc()">
+
+                            <!-- نص توضيحي -->
+                            <small class="form-text text-muted">JPG or PNG no larger than 5 MB</small>
+
+                            <!-- Span لعرض أخطاء التحقق من الصورة -->
+                            <span class="text-danger" asp-validation-for="Picture"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medicine Details Section -->
+            <div class="col-md-8">
+                <div class="card">
+                    <h5 class="card-title p-2">Medicine Details</h5>
+
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Medicine Name</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Enter medicine name" name="Name" value="@Model?.Name" required>
+                            <!-- Validation span for name -->
+                            <span class="text-danger small" asp-validation-for="Name"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="cost" class="form-label">Cost</label>
+                            <input class="form-control" id="cost" placeholder="0.00$" name="Price" type="number" min="0" step="0.01" value="@Model?.Price" required>
+                            <!-- Validation span for price -->
+                            <span class="text-danger  small" asp-validation-for="Price"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ProductionDate" class="form-label">Production Date</label>
+                            <input asp-for="ProductionDate" class="form-control" type="date" required>
+                            <!-- Validation span for production date -->
+                            <span class="text-danger small" asp-validation-for="ProductionDate"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ExpiryDate" class="form-label">Expiry Date</label>
+                            <input asp-for="ExpiryDate" class="form-control" type="date" required>
+                            <!-- Validation span for expiry date -->
+                            <span class="text-danger small" asp-validation-for="ExpiryDate"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary">Edit Medicine</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        function SetImgSrc() {
+            document.getElementById("medicineImage").src = window.URL.createObjectURL(document.getElementById("imageFormFile").files[0]);
+        }
+    </script>
+}

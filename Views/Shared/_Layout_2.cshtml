@@ -1,0 +1,107 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Pharmacy_v2.Data
+@using Microsoft.EntityFrameworkCore
+@using Pharmacy_v2.Models
+@using System.Security.Claims
+@inject UserManager<ApplicationUser> _userManager;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Blank Page</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/font-awesome/icomoon/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="~/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+
+
+<body class="hold-transition sidebar-mini">
+
+
+    <header>
+        <div class="site-wrap">
+            <div class="site-navbar py-2">
+
+
+                <div class="container">
+
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="logo">
+                            <div class="site-logo">
+                                <a href="index.html" class="js-logo-clone">Pharma</a>
+                            </div>
+                        </div>
+                        <div class="main-nav d-none d-lg-block">
+                            <nav class="site-navigation text-right text-md-center" role="navigation">
+                                <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                    <li><a href="/Home/index" style="">Home</a></li>
+                                    <li><a href="/Medicine/index">Store</a></li>
+
+                                    <li><a href="/Home/About">About</a></li>
+                                    <li><a href="/Home/Contact">Contact</a></li>
+                                    @if (!User.Identity.IsAuthenticated)
+                                    {
+                                        <li><a href="/Account/Login">Sign In / Sign Up</a></li>
+                                    }
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="icons">
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                var user = await _userManager.FindByNameAsync(User.Identity.Name); // Synchronous version
+                                <a href="/Bag/Index/@user.Id" class="icons-btn d-inline-block bag">
+                                    <spa class="icon-shopping-bag"></spa>
+                                </a>
+                                @*                             <span class="number">@user.Id</span>
+                            *@
+                            }
+                            else
+                            {
+                                <a href="/Account/Login" class="icons-btn d-inline-block bag">
+                                    <spa class="icon-shopping-bag"></spa>
+                                </a>
+                            }
+
+                            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none">
+                                <span class="icon-menu"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    @RenderBody();
+
+
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

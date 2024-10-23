@@ -1,0 +1,977 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pharmacy_v2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Pharmacy_v2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Images\\04a7ef75-dcab-42f0-be3b-d55c86a58eba.png",
+      "PackagePath": "staticwebassets\\Images\\04a7ef75-dcab-42f0-be3b-d55c86a58eba.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Images\\2dee5759-699f-4183-8bd2-4a432025fbf4.jpg",
+      "PackagePath": "staticwebassets\\Images\\2dee5759-699f-4183-8bd2-4a432025fbf4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Images\\4dd3fdb9-f648-439c-846f-7fa19d848261.jpg",
+      "PackagePath": "staticwebassets\\Images\\4dd3fdb9-f648-439c-846f-7fa19d848261.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Images\\5cbb70aa-b346-4a08-9aa1-49e0ed87233a.png",
+      "PackagePath": "staticwebassets\\Images\\5cbb70aa-b346-4a08-9aa1-49e0ed87233a.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Images\\8ead56e8-c6fd-4635-83f2-7607329106a4.png",
+      "PackagePath": "staticwebassets\\Images\\8ead56e8-c6fd-4635-83f2-7607329106a4.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Images\\c2479700-8aeb-4df0-ae4a-fe09d642b946.png",
+      "PackagePath": "staticwebassets\\Images\\c2479700-8aeb-4df0-ae4a-fe09d642b946.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Images\\d66e1547-6840-45a4-9b84-8bd34f74b38a.png",
+      "PackagePath": "staticwebassets\\Images\\d66e1547-6840-45a4-9b84-8bd34f74b38a.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Images\\db266aaa-4a61-4ac8-906b-3212b8beab38.png",
+      "PackagePath": "staticwebassets\\Images\\db266aaa-4a61-4ac8-906b-3212b8beab38.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\Bag.png",
+      "PackagePath": "staticwebassets\\Photos\\Bag.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\Logo.jpg",
+      "PackagePath": "staticwebassets\\Photos\\Logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\bg_1.jpg",
+      "PackagePath": "staticwebassets\\Photos\\bg_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\bg_2.jpg",
+      "PackagePath": "staticwebassets\\Photos\\bg_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\check.jpg",
+      "PackagePath": "staticwebassets\\Photos\\check.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\hero_1.jpg",
+      "PackagePath": "staticwebassets\\Photos\\hero_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\product_01.png",
+      "PackagePath": "staticwebassets\\Photos\\product_01.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\product_02.png",
+      "PackagePath": "staticwebassets\\Photos\\product_02.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\product_03.png",
+      "PackagePath": "staticwebassets\\Photos\\product_03.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\product_04.png",
+      "PackagePath": "staticwebassets\\Photos\\product_04.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\product_05.png",
+      "PackagePath": "staticwebassets\\Photos\\product_05.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\product_06.png",
+      "PackagePath": "staticwebassets\\Photos\\product_06.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\product_07_large.png",
+      "PackagePath": "staticwebassets\\Photos\\product_07_large.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\Photos\\products_1.png",
+      "PackagePath": "staticwebassets\\Photos\\products_1.png"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\Login_style.css",
+      "PackagePath": "staticwebassets\\css\\Login_style.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\adminlte.css",
+      "PackagePath": "staticwebassets\\css\\adminlte.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\adminlte.css.map",
+      "PackagePath": "staticwebassets\\css\\adminlte.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\adminlte.min.css",
+      "PackagePath": "staticwebassets\\css\\adminlte.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.components.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.components.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.components.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.components.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.components.min.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.components.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.components.min.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.components.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.core.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.core.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.core.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.core.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.core.min.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.core.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.core.min.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.core.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.extra-components.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.extra-components.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.extra-components.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.extra-components.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.extra-components.min.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.extra-components.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.extra-components.min.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.extra-components.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.light.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.light.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.light.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.light.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.light.min.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.light.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.light.min.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.light.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.pages.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.pages.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.pages.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.pages.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.pages.min.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.pages.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.pages.min.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.pages.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.plugins.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.plugins.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.plugins.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.plugins.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.plugins.min.css",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.plugins.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\alt\\adminlte.plugins.min.css.map",
+      "PackagePath": "staticwebassets\\css\\alt\\adminlte.plugins.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\aos.css",
+      "PackagePath": "staticwebassets\\css\\aos.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\bootstrap\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\login_js.js",
+      "PackagePath": "staticwebassets\\css\\login_js.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\brands.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\brands.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\brands.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\regular.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\regular.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\regular.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\solid.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\solid.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\solid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-shims.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\icomoon\\Read Me.txt",
+      "PackagePath": "staticwebassets\\font-awesome\\icomoon\\Read Me.txt"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\icomoon\\demo-files\\demo.css",
+      "PackagePath": "staticwebassets\\font-awesome\\icomoon\\demo-files\\demo.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\icomoon\\demo-files\\demo.js",
+      "PackagePath": "staticwebassets\\font-awesome\\icomoon\\demo-files\\demo.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\icomoon\\demo.html",
+      "PackagePath": "staticwebassets\\font-awesome\\icomoon\\demo.html"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\icomoon\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\font-awesome\\icomoon\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\icomoon\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\icomoon\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\icomoon\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\icomoon\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\icomoon\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\font-awesome\\icomoon\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\icomoon\\selection.json",
+      "PackagePath": "staticwebassets\\font-awesome\\icomoon\\selection.json"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\icomoon\\style.css",
+      "PackagePath": "staticwebassets\\font-awesome\\icomoon\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\all.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\all.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\brands.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\brands.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\brands.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\fontawesome.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\regular.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\regular.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\regular.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\solid.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\solid.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\solid.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\v4-shims.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.js",
+      "PackagePath": "staticwebassets\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.min.js",
+      "PackagePath": "staticwebassets\\jquery-ajax-unobtrusive\\jquery.unobtrusive-ajax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\.eslintrc.json",
+      "PackagePath": "staticwebassets\\js\\.eslintrc.json"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\adminlte.js",
+      "PackagePath": "staticwebassets\\js\\adminlte.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\adminlte.js.map",
+      "PackagePath": "staticwebassets\\js\\adminlte.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\adminlte.min.js.map",
+      "PackagePath": "staticwebassets\\js\\adminlte.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\aos.js",
+      "PackagePath": "staticwebassets\\js\\aos.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\pages\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\pages\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\pages\\dashboard2.js",
+      "PackagePath": "staticwebassets\\js\\pages\\dashboard2.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\pages\\dashboard3.js",
+      "PackagePath": "staticwebassets\\js\\pages\\dashboard3.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\all.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\brands.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\brands.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\brands.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\regular.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\regular.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\regular.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\solid.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\solid.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\solid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\v4-shims.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\plugins\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\plugins\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\plugins\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\plugins\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\plugins\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\bedo\\Downloads\\Pharmacy_v2(2)\\Pharmacy_v2\\Pharmacy_v2\\wwwroot\\plugins\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\plugins\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pharmacy_v2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Pharmacy_v2.props",
+      "PackagePath": "build\\Pharmacy_v2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pharmacy_v2.props",
+      "PackagePath": "buildMultiTargeting\\Pharmacy_v2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pharmacy_v2.props",
+      "PackagePath": "buildTransitive\\Pharmacy_v2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

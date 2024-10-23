@@ -1,0 +1,95 @@
+﻿@using Pharmacy_v2.Models
+@model IEnumerable<Category>
+
+@{
+   
+    Layout = "_Layout_admin";
+}
+<!-- Main Heading -->
+<h1 class="alert btn-primary text-center">List of Categories</h1>
+<hr />
+
+<!-- Search Form Section  -->
+<div class="row mb-3">
+    <div class="col-md-8">
+        <form class="d-flex" method="get" asp-controller="Categories" asp-action="GetIndexView">
+            
+            <input class="form-control me-2 border-primary" type="search" name="search" placeholder="Search" value="@ViewBag.Search" style="width: 50%;">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="col-md-4 d-flex justify-content-end">
+        <a asp-controller="Categories" asp-action="GetCreateView" class="btn btn-outline-primary" style="padding: 10px 20px;">
+            Add New
+        </a>
+    </div>
+</div>
+
+<!-- Table Section with Scroll -->
+<div class="row">
+    <div class="col-md-10 offset-md-1">
+        @if (Model.Any())
+        {
+            <div style="overflow-x: auto;">
+                <table class="table table-hover table-bordered text-center">
+                    <thead class="table-warning">
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.ImagePath)</th>
+                            <th>@Html.DisplayNameFor(model => model.CategoryName)</th>
+                            <th>@Html.DisplayNameFor(model => model.AnnualBudget)</th>
+                            <th>@Html.DisplayNameFor(model => model.IsActive)</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="align-middle">
+                                    <img class="rounded" src="@item.ImagePath" alt="@item.CategoryName" style="max-width: 100px;" />
+                                </td>
+                                <td class="align-middle">@Html.DisplayFor(modelItem => item.CategoryName)</td>
+                                <td class="align-middle">@Html.DisplayFor(modelItem => item.AnnualBudget)</td>
+                                <td class="align-middle">
+                                    @if (item.IsActive)
+                                    {
+                                        <span class="badge bg-success">Active</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger">Inactive</span>
+                                    }
+                                </td>
+                                <td class="align-middle">
+                                    <a asp-controller="Categories" asp-action="GetDetailsView" asp-route-id="@item.Id" class="btn btn-outline-info btn-sm">
+                                        <i class="bi bi-list-ul"></i> Details
+                                    </a>
+                                    <a asp-controller="Categories" asp-action="GetEditView" asp-route-id="@item.Id" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-pencil-square"></i> Edit
+                                    </a>
+                                    <a asp-controller="Categories" asp-action="GetDeleteView" asp-route-id="@item.Id" class="btn btn-outline-danger btn-sm">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </a>
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2" class="text-end">Total Annual Budget:</th>
+                            <th>@Model.Sum(categ => categ.AnnualBudget)</th>
+                            <td colspan="2"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-warning text-center">
+                No categories available at the moment.
+            </div>
+        }
+    </div>
+</div>

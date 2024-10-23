@@ -1,0 +1,44 @@
+﻿@{
+    Category category = (Category)ViewBag.CurrentCateg;
+
+}
+
+<div class="row">
+    <dl class="col-8 row">
+            <dt class="col-2">@Html.DisplayNameFor(c =>category.Id)</dt>
+            <dd class="col-10">@Html.DisplayFor(c => category.Id) </dd>
+        
+            <dt class="col-2">@Html.DisplayNameFor(c =>category.CategoryName)</dt>
+            <dd class="col-10">@Html.DisplayFor(c =>category.CategoryName)</dd>
+        
+            <dt class="col-2">@Html.DisplayNameFor(c => category.AnnualBudget)</dt>
+            <dd class="col-10">@Html.DisplayFor(c => category.AnnualBudget)</dd>
+       
+            <dt class="col-2">@Html.DisplayNameFor(c => category.ImagePath)</dt>
+            <dd class="col-10">@Html.DisplayFor(c => category.ImagePath)</dd>
+        
+            <dt class="col-2">@Html.DisplayNameFor(c => category.IsActive)</dt>
+            <dd class="col-10">@Html.DisplayFor(c => category.IsActive)</dd>
+        
+    </dl>
+    <img src="@Model.ImagePath" class="card col-4" style="object-fit:contain" />
+</div>
+
+<ul class="col-4 list-group">
+    @if (Model.Medicines != null)
+    {
+        <li class="alert  btn-primary text-center list-group-item active">Product</li>
+
+
+    @foreach (var product in Model.Medicines)
+    {
+
+        <a asp-controller="Products" asp-action="GetDetailsView" asp-route-id="@product.Id" style="text-decoration:none">
+        <li class="list-group-item list-group-item-action">
+                @product.Name (@product.Price)
+        </li>
+        </a>
+    }
+    }
+</ul>
+

@@ -1,0 +1,61 @@
+﻿@using Pharmacy_v2.Models
+@model Category
+@{
+  
+    Layout = "_Layout_admin";
+}
+
+<div class="row text">
+    <div class="col-md-8 offset-2">
+        <p>
+            <h1 class="alert  btn-primary text-center ">Edit Category</h1>
+        </p>
+        <div class="row">
+            <form class="col-md-8 offset-2" method="post" asp-controller="Categories" asp-action="EditCurrent" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="ImagePath" />
+
+                <!-- تعديل عرض الصورة -->
+                <div class="form-group text-center">
+                    <img src="@Model.ImagePath" id="categImage" class="img-fluid" style="max-width: 150px; border: 2px solid #ffc107;" />
+                </div>
+                <div>
+                    <label asp-for="ImagePath"></label>
+                    <input type="file" name="imageFormFile" id="imageFormFile" accept=".png,.jpg" class="form-control" onchange="SetImgSrc()" />
+                </div>
+
+                <div>
+                    <label asp-for="CategoryName"></label>
+                    <input type="text" asp-for="CategoryName" class="form-control" />
+                    <span asp-validation-for="CategoryName" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label asp-for="AnnualBudget"></label>
+                    <input type="number" asp-for="AnnualBudget" class="form-control" />
+                    <span asp-validation-for="AnnualBudget" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label asp-for="IsActive"></label>
+                    <input asp-for="IsActive" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-primary float-right">Edit</button>
+                    <a class="btn btn-outline-secondary" asp-controller="Categories" asp-action="GetIndexView">Back to List</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function SetImgSrc() {
+            document.getElementById("categImage").src = window.URL.createObjectURL(document.getElementById("imageFormFile").files[0]);
+        }
+    </script>
+}

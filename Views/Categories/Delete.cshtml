@@ -1,0 +1,26 @@
+﻿@using Pharmacy_v2.Models
+@model Category
+@{
+   
+    Layout = "_Layout_admin";
+}
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+  <p>
+    <h1 class="alert btn-primary text-center ">
+        Are you sure you want to delete @Model.CategoryName?!
+    </h1>
+  </p>
+
+<partial name="_CategorData" />
+<hr />
+<div class="form-group">
+    <form method="post" asp-controller="Categories" asp-action="DeleteCurrent">
+     
+        <div class="form-group">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-outline-primary float-right">Delete</button>
+            <a class="btn btn-outline-secondary" asp-controller="Categories" asp-action="GetIndexView">Back to List</a>
+
+        </div>
+    </form>
+</div>

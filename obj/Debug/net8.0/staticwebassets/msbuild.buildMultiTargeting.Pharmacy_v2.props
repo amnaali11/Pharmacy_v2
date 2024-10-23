@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Pharmacy_v2.props" />
+</Project>

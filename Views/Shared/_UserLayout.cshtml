@@ -1,0 +1,336 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Pharmacy_v2.Data
+@using Microsoft.EntityFrameworkCore
+@using Pharmacy_v2.Models
+@using System.Security.Claims
+@using Pharmacy_v2.Repos.Repo_Interfaces;
+@inject IOrderRepository OrderRepository;
+@inject IBagRepository BagRepository;
+@inject UserManager<ApplicationUser> _userManager;
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @* <title>@ViewData["Title"] - Pharmacy</title> *@
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/css/adminlte.min.css">
+    <link rel="stylesheet" href="/font-awesome/icomoon/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="~/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+
+
+<style>
+    .number {
+        width: 20px;
+        height: 20px;
+        background-color: #ffc107; /* Yellow color */
+        border-radius: 50%; /* Makes it a circle */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        color: black; /* Color of the number */
+        position: absolute;
+        right: 70px;
+        top: 20px;
+    }
+</style>
+
+
+<body class=" sidebar-mini sidebar-closed sidebar-collapse">
+    <header>
+        <div class="site-wrap">
+            <div class="site-navbar py-2">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="logo">
+                            <div class="site-logo">
+
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <li class="nav-item" style="display:inline-grid">
+                                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                                    </li>
+                                }
+                                <a href="#" class="js-logo-clone">Pharma</a>
+                            </div>
+                        </div>
+                        <div class="main-nav d-none d-lg-block">
+                            <nav class="site-navigation text-right text-md-center" role="navigation">
+                                <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                    <li><a href="/Home/index">Home</a></li>
+                                    @if (!User.IsInRole("Admin")){
+                                       <li><a href="/Medicine/index">Store</a></li>
+
+                                    }
+
+
+                                    <li><a href="/Home/About">About</a></li>
+                                    <li><a href="/Home/Contact">Contact</a></li>
+                                    @if (!User.Identity.IsAuthenticated)
+                                    {
+                                        <li><a href="/Account/Login">Sign In / Sign Up</a></li>
+                                    }else{
+                                        <li><a href="/Account/Logout">Logout</a></li>
+                                    }
+
+                                </ul>
+                            </nav>
+                        </div>
+
+
+                        @if(!User.IsInRole("Admin")){
+                        <div class="icons">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                var user = await _userManager.FindByNameAsync(User.Identity.Name); // Synchronous version
+                                Bag? bag = BagRepository.GetByUserId(user.Id);
+                                List<Order>? list = OrderRepository.GetOrdersInBag(bag.Id);
+
+                                <a href="/Bag/Index/@user.Id" class="icons-btn d-inline-block bag">
+                                    <span class="icon-shopping-bag"></span>
+                                </a>
+                                if (@list.Count() > 0)
+                                {
+                                    <span class="number">@list.Count()</span>
+                                }
+                            }
+                            else 
+                            {
+                                <a href="/Account/Login" class="icons-btn d-inline-block bag">
+                                    <spa class="icon-shopping-bag"></spa>
+                                </a>
+                            }
+
+                            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none">
+                                <span class="icon-menu"></span>
+                            </a>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!-- Site wrapper Admin-->
+    @if (User.IsInRole("Admin"))
+    {
+        <div class="wrapper">
+            <!-- Main Sidebar Container -->
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Brand Logo -->
+                <a href="#" class="brand-link">
+                    <img src="/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                    <span class="brand-text font-weight-light">Admin</span>
+                </a>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Sidebar user (optional) -->
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="/Photos/Logo.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">Pharmacy Mangement</a>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Menu -->
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                            <!-- Add icons to the links using the .nav-icon class
+                                 with font-awesome or any other icon font library -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <p>
+                                        Dashboard
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("GetIndexView","Categories")" class="nav-link">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <p>
+                                        Categories
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("Admin","Medicine")" class="nav-link">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <p>
+                                        Medicines
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <p>
+                                        Orders
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="@Url.Action("GetAllUsers","Categories")" class="nav-link">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <p>
+                                        Users
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /.sidebar-menu -->
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1>@ViewBag.PageTitle</h1>
+
+                            </div>
+
+                        </div>
+                    </div><!-- /.container-fluid -->
+                </section>
+                <section class="content">
+                    <partial name="_Toaster" />
+                    @RenderBody()
+                </section>
+
+            </div>
+            <!-- /.content-wrapper -->
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Control sidebar content goes here -->
+            </aside>
+            <!-- /.control-sidebar -->
+        </div>
+
+    }
+    else
+    {
+        <partial name="_Toaster" />
+        @RenderBody();
+    }
+    <div class="site-section bg-secondary bg-image" style="background-image: url('/Photos/bg_2.jpg');">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('/Photos/bg_1.jpg');">
+                        <div class="banner-1-inner align-self-center">
+                            <h2>Pharma Products</h2>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('/Photos/bg_2.jpg');">
+                        <div class="banner-1-inner ml-auto  align-self-center">
+                            <h2>Rated by Experts</h2>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+                    <div class="block-7">
+                        <h3 class="footer-heading mb-4">About Us</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates
+                            sed dolorum excepturi iure eaque, aut unde.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+                    <h3 class="footer-heading mb-4">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Supplements</a></li>
+                        <li><a href="#">Vitamins</a></li>
+                        <li><a href="#">Diet &amp; Nutrition</a></li>
+                        <li><a href="#">Tea &amp; Coffee</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="block-5 mb-5">
+                        <h3 class="footer-heading mb-4">Contact Info</h3>
+                        <ul class="list-unstyled">
+                            <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
+                            <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
+                            <li class="email">emailaddress@domain.com</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/js/adminlte.min.js"></script>
+
+
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/main.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
