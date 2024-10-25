@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Pharmacy_v2.Data;
@@ -10,6 +11,8 @@ using System.Threading.Tasks;
 
 namespace Pharmacy_v2.Controllers
 {
+    [Authorize(Roles = "Admin")]
+
     public class AccountController : Controller
     {
         private readonly AppDbContext _context;
@@ -24,7 +27,7 @@ namespace Pharmacy_v2.Controllers
             _signInManager = signInManager;
             _roleManager = roleManager; 
         }
-
+        [AllowAnonymous]
         public IActionResult Login()
         {
         return View();
@@ -160,9 +163,38 @@ namespace Pharmacy_v2.Controllers
 
             return View(LNonAdminUsersDto);
         }
+        [AllowAnonymous]
+        public async Task<IActionResult> GetAllAdmins()
+        {
+            var allUsers = _userManager.Users.ToList();
+            List<NonAdminUsersDTO> LNonAdminUsersDto = new List<NonAdminUsersDTO>();
+            foreach (var user in allUsers)
+            {
+                // Check if the user has the "Admin" role
+                var roles = await _userManager.GetRolesAsync(user);
+                if (roles.Contains("Admin"))
+                {
+                    LNonAdminUsersDto.Add(new NonAdminUsersDTO()
+                    {
+                        Id = user.Id,
+                        Name = user.UserName,
+                        Age = user.Age,
+                    });
+                }
+            }
 
+            return View(LNonAdminUsersDto);
+        }
+        //public IActionResult ChatAdmin(string? blockedId)
+        //{
+        //    string? name = User.Claims.FirstOrDefault(x => x.Type==ClaimTypes.Name).Value;
+        //    string USERID = User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier).Value;
+
+        //}
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
+
         public async Task<IActionResult> Login(AccountLoginDTO model)
         {
             if (ModelState.IsValid)
@@ -203,13 +235,15 @@ namespace Pharmacy_v2.Controllers
             return View(model);
         }
 
+        [AllowAnonymous]
+        
 
         public IActionResult Register()
         {
 
            return View();
         }
-
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(AccountRegisterationDTO account)
@@ -243,6 +277,7 @@ namespace Pharmacy_v2.Controllers
 
             return View(account);
         }
+        [AllowAnonymous]
 
         public async Task<IActionResult> Logout()
         {

@@ -277,6 +277,42 @@ namespace Pharmacy_v2.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("Pharmacy_v2.Models.Conversation", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Gname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IsSender")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Kind")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("time")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("id");
+
+                    b.ToTable("conversation");
+                });
+
             modelBuilder.Entity("Pharmacy_v2.Models.Medicine", b =>
                 {
                     b.Property<int>("Id")
@@ -341,6 +377,48 @@ namespace Pharmacy_v2.Migrations
                     b.HasIndex("BagId");
 
                     b.ToTable("orders");
+                });
+
+            modelBuilder.Entity("Pharmacy_v2.SignalR_Database.UserConnection", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("ConnectionId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("UserConnections");
+                });
+
+            modelBuilder.Entity("Pharmacy_v2.SignalR_Database.UserGroups", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("Gname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("UserGroups");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

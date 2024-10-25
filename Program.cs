@@ -10,7 +10,7 @@ using System.Configuration;
 using Pharmacy.HttpServices;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddSignalR();
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Conn")));

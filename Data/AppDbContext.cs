@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Pharmacy_v2.Models;
-using System.Reflection.Emit;
+using Pharmacy_v2.SignalR_Database;
 
 namespace Pharmacy_v2.Data
 {
@@ -11,6 +11,9 @@ namespace Pharmacy_v2.Data
         public DbSet<Medicine> Medicine { get; set; }
         public DbSet<Order> orders { get; set; }
         public DbSet<Bag> bag { get; set; }
+        public virtual DbSet<Conversation> conversation { get; set; }
+        public virtual DbSet<UserConnection> UserConnections { get; set; }
+        public virtual DbSet<UserGroups> UserGroups { get; set; }
         public AppDbContext(DbContextOptions options) : base(options)
         {
 
