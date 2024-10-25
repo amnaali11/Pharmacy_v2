@@ -25,17 +25,17 @@ namespace Pharmacy_v2.Controllers
 
         public async Task<IActionResult> Index()
         {
-            //if (User != null)
-            //{
-            //    ApplicationUser? user = await _userManeger.FindByNameAsync(User.Identity.Name);
-            //    if (user != null)
-            //    {
-            //        if (_userManeger.IsInRoleAsync(user, "Locked").Result)
-            //        {
-            //            return View("Locked");
-            //        }
-            //    }
-            //}
+            if (User != null)
+            {
+                ApplicationUser? user = await _userManeger.FindByNameAsync(User.Identity.Name);
+                if (user != null)
+                {
+                    if (_userManeger.IsInRoleAsync(user, "Locked").Result)
+                    {
+                        return View("Locked");
+                    }
+                }
+            }
 
 
             List<Medicine> medicines = Mrepo.GetAll();

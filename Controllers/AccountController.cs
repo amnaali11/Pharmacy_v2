@@ -29,6 +29,137 @@ namespace Pharmacy_v2.Controllers
         {
         return View();
         }
+        public async Task EnsureRoleExists(string roleName)
+        {
+            bool roleExists = await _roleManager.RoleExistsAsync(roleName);
+            if (!roleExists)
+            {
+                var role = new IdentityRole { Name = roleName };
+                await _roleManager.CreateAsync(role);
+            }
+        }
+        public async Task<IActionResult> UnLockUser(string id)
+        {
+            await EnsureRoleExists("Locked");
+            var user = await _userManager.FindByIdAsync(id);
+            if (user != null)
+            {
+                var result = await _userManager.RemoveFromRoleAsync(user, "Locked");
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("GetAllUsers");
+                }
+                else
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+            }
+            return RedirectToAction("GetAllUsers");
+
+        }
+
+        public async Task<IActionResult> LockUser(string id)
+        {
+            ApplicationUser? User1 = await _userManager.FindByNameAsync(User.Identity.Name);
+            if (User != null)
+            {
+                if (_userManager.IsInRoleAsync(User1, "Locked").Result)
+                {
+                    return View("Locked");
+                }
+            }
+            await EnsureRoleExists("Locked");
+            var user = await _userManager.FindByIdAsync(id);
+            if (user != null)
+            {
+                var result = await _userManager.AddToRoleAsync(user, "Locked");
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("GetAllUsers");
+                }
+                else
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+            }
+            return RedirectToAction("GetAllUsers");
+
+        }
+        public async Task<IActionResult> ActivateNewAdmin(string id)
+        {
+
+            ApplicationUser? User1 = await _userManager.FindByNameAsync(User.Identity.Name);
+            if (User != null)
+            {
+                if (_userManager.IsInRoleAsync(User1, "Locked").Result)
+                {
+                    return View("Locked");
+                }
+            }
+            await EnsureRoleExists("Admin");
+            var user = await _userManager.FindByIdAsync(id);
+            if (user != null)
+            {
+                var result = await _userManager.AddToRoleAsync(user, "Admin");
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("GetAllUsers");
+                }
+                else
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+            }
+            return RedirectToAction("GetAllUsers");
+        }
+        public async Task<IActionResult> GetAllUsers()
+        {
+
+            ApplicationUser? User1 = await _userManager.FindByNameAsync(User.Identity.Name);
+            if (User != null)
+            {
+                if (_userManager.IsInRoleAsync(User1, "Locked").Result)
+                {
+                    return View("Locked");
+                }
+            }
+            // Get the role object for "Admin"
+            //var adminRole = await _roleManager.FindByNameAsync("Admin");
+
+            //if (adminRole == null)
+            //{
+            //    return NotFound("Admin role does not exist.");
+            //}
+
+            // Get all users
+            var allUsers = _userManager.Users.ToList();
+            List<NonAdminUsersDTO> LNonAdminUsersDto = new List<NonAdminUsersDTO>();
+            foreach (var user in allUsers)
+            {
+                // Check if the user has the "Admin" role
+                var roles = await _userManager.GetRolesAsync(user);
+                if (!roles.Contains("Admin"))
+                {
+                    LNonAdminUsersDto.Add(new NonAdminUsersDTO()
+                    {
+                        Id = user.Id,
+                        Name = user.UserName,
+                        Age = user.Age,
+                    });
+                }
+            }
+
+            return View(LNonAdminUsersDto);
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]

@@ -792,3 +792,4 @@ C:\Users\bedo\Downloads\Pharmacy_v2(2)\Pharmacy_v2\Pharmacy_v2\obj\Debug\net8.0\
 C:\Users\bedo\Downloads\Pharmacy_v2(2)\Pharmacy_v2\Pharmacy_v2\obj\Debug\net8.0\Pharmacy_v2.pdb
 C:\Users\bedo\Downloads\Pharmacy_v2(2)\Pharmacy_v2\Pharmacy_v2\obj\Debug\net8.0\Pharmacy_v2.genruntimeconfig.cache
 C:\Users\bedo\Downloads\Pharmacy_v2(2)\Pharmacy_v2\Pharmacy_v2\obj\Debug\net8.0\ref\Pharmacy_v2.dll
+C:\Users\bedo\Downloads\Pharmacy_v2(2)\Pharmacy_v2\Pharmacy_v2\obj\Debug\net8.0\Pharmacy_v2.sourcelink.json
