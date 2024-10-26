@@ -1,6 +1,7 @@
 # Pharmacy_v2
-**ASP.NET MVC DEPI 
 
+
+**ASP.NET MVC DEPI 
 The Pharmacy System Project aims to simplify and secure the online purchasing process, 
 providing users with a reliable platform to access essential medications without visiting a 
 pharmacy. By leveraging a structured software development approach, this project enhances the 
